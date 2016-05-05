@@ -91,10 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YHHeadScrollView", "*.swift"
-  s.exclude_files = "YHHeadScrollViewDemo/*.h"
+  s.source_files  = "YHHeadScrollView/*.swift", "YHHeadScrollViewDemo/*.h" 
+  #s.exclude_files = "YHHeadScrollViewDemo/*.h"
 
-  s.public_header_files = "*.h"
+  #s.public_header_files = "*.h"
+  #s.private_header_files = 'SQLite/Core/fts3_tokenizer.h'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
