@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YHHeadScrollView"
   s.version      = "0.0.1"
-  s.summary      = "scollImageViews with animation and once show three"
+  s.summary      = "ScollImageView with animation and once show three"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "youhui" => "developer_yh@163.com" }
+  s.author             = { “developeryh” => "developer_yh@163.com" }
   # Or just: s.author    = "youhui"
   # s.authors            = { "youhui" => "developer_yh@163.com" }
   # s.social_media_url   = "http://twitter.com/youhui"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YHHeadScrollViewDemo/YHHeadScrollView/*"
+  s.source_files  = "YHHeadScrollView", "*.swift"
   #s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "YHHeadScrollViewDemo/*.h"
