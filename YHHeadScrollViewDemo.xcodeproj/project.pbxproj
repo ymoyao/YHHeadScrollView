@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1DE7839B0B992F7C8578EAFF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		AB2FD4CE1CD3140C00F487CC /* YHHeadScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHHeadScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2FD4CE1CD3140C00F487CC /* YHHeadScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHHeadScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2FD4D11CD3140C00F487CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2FD4D31CD3140C00F487CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB2FD4D61CD3140C00F487CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		AB2FD4C51CD3140C00F487CC = {
 			isa = PBXGroup;
 			children = (
-				AB2FD4D01CD3140C00F487CC /* YHHeadScrollView */,
+				AB2FD4D01CD3140C00F487CC /* YHHeadScrollViewDemo */,
 				ABD92A5D1CD8702E00AAC6EA /* Resource */,
 				AB2FD4CF1CD3140C00F487CC /* Products */,
 				7F1812440BEE861D08873D98 /* Pods */,
@@ -86,12 +86,12 @@
 		AB2FD4CF1CD3140C00F487CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB2FD4CE1CD3140C00F487CC /* YHHeadScrollView.app */,
+				AB2FD4CE1CD3140C00F487CC /* YHHeadScrollViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB2FD4D01CD3140C00F487CC /* YHHeadScrollView */ = {
+		AB2FD4D01CD3140C00F487CC /* YHHeadScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
 				ABADC80B1CDADDED0053F360 /* ScrollImageView.swift */,
@@ -104,7 +104,7 @@
 				ABA9F34D1CD33AFE0021D955 /* YHHeadScrollView.swift */,
 				ABD92A731CD8780700AAC6EA /* YHHeadScrollView-Bridging-Header.h */,
 			);
-			path = YHHeadScrollView;
+			path = YHHeadScrollViewDemo;
 			sourceTree = "<group>";
 		};
 		ABD92A5D1CD8702E00AAC6EA /* Resource */ = {
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB2FD4CD1CD3140C00F487CC /* YHHeadScrollView */ = {
+		AB2FD4CD1CD3140C00F487CC /* YHHeadScrollViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB2FD4F61CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollView" */;
+			buildConfigurationList = AB2FD4F61CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewDemo" */;
 			buildPhases = (
 				429E7AC2F995DAC97A9FCE12 /* Check Pods Manifest.lock */,
 				AB2FD4CA1CD3140C00F487CC /* Sources */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = YHHeadScrollView;
+			name = YHHeadScrollViewDemo;
 			productName = YHHeadScrollView;
-			productReference = AB2FD4CE1CD3140C00F487CC /* YHHeadScrollView.app */;
+			productReference = AB2FD4CE1CD3140C00F487CC /* YHHeadScrollViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB2FD4C91CD3140C00F487CC /* Build configuration list for PBXProject "YHHeadScrollView" */;
+			buildConfigurationList = AB2FD4C91CD3140C00F487CC /* Build configuration list for PBXProject "YHHeadScrollViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB2FD4CD1CD3140C00F487CC /* YHHeadScrollView */,
+				AB2FD4CD1CD3140C00F487CC /* YHHeadScrollViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -374,11 +374,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
-				INFOPLIST_FILE = YHHeadScrollView/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.yh.YHHeadScrollView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YHHeadScrollViewDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT)/YHHeadScrollView-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
@@ -391,11 +391,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
-				INFOPLIST_FILE = YHHeadScrollView/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.yh.YHHeadScrollView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YHHeadScrollViewDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT)/YHHeadScrollView-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
@@ -404,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB2FD4C91CD3140C00F487CC /* Build configuration list for PBXProject "YHHeadScrollView" */ = {
+		AB2FD4C91CD3140C00F487CC /* Build configuration list for PBXProject "YHHeadScrollViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB2FD4F41CD3140C00F487CC /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB2FD4F61CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollView" */ = {
+		AB2FD4F61CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB2FD4F71CD3140C00F487CC /* Debug */,
