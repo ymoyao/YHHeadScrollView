@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "Resource/*.png"
+  s.resources = "YHHeadScrollViewDemo/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
