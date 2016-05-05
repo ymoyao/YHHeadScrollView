@@ -105,8 +105,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-  s.resources = "YHHeadScrollViewDemo/*.png"
+  s.resource  = "1.png"
+  #s.resources = "YHHeadScrollViewDemo/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
