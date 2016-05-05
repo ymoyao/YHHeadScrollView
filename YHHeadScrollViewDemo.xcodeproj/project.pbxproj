@@ -29,8 +29,8 @@
 		AB2FD4DD1CD3140C00F487CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABADC80E1CDAE3030053F360 /* ScrollImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		ABADC80F1CDAE3030053F360 /* YHHeadScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHeadScrollView.swift; sourceTree = "<group>"; };
+		ABADC8121CDAFCB50053F360 /* YHHeadScrollView-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YHHeadScrollView-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABD92A6B1CD870D200AAC6EA /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		ABD92A731CD8780700AAC6EA /* YHHeadScrollView-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YHHeadScrollView-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB1BDC2C44FD8B1F67DF442A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A86D2CC77384778AF34623 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,6 @@
 				AB2FD4D81CD3140C00F487CC /* Assets.xcassets */,
 				AB2FD4DA1CD3140C00F487CC /* LaunchScreen.storyboard */,
 				AB2FD4DD1CD3140C00F487CC /* Info.plist */,
-				ABD92A731CD8780700AAC6EA /* YHHeadScrollView-Bridging-Header.h */,
 			);
 			path = YHHeadScrollViewDemo;
 			sourceTree = "<group>";
@@ -101,6 +100,7 @@
 		ABADC80D1CDAE3030053F360 /* YHHeadScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				ABADC8121CDAFCB50053F360 /* YHHeadScrollView-Bridging-Header.h */,
 				ABADC80E1CDAE3030053F360 /* ScrollImageView.swift */,
 				ABADC80F1CDAE3030053F360 /* YHHeadScrollView.swift */,
 			);
