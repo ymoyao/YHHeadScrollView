@@ -91,10 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YHHeadScrollViewDemo/YHHeadScrollView"
+  s.source_files  = "YHHeadScrollViewDemo/YHHeadScrollView/“
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "YHHeadScrollViewDemo/**/*.h"
+  s.public_header_files = "YHHeadScrollViewDemo/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,8 +105,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "1.png"
-  #s.resources = "YHHeadScrollViewDemo/*.png"
+  #s.resource  = "1.png"
+  s.resources = "Resource/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
