@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "YHHeadScrollView", "*.swift"
-  #s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "YHHeadScrollViewDemo/*.h"
 
   s.public_header_files = "YHHeadScrollViewDemo/*.h"
 
