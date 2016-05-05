@@ -13,34 +13,14 @@
 		AB2FD4D71CD3140C00F487CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2FD4D51CD3140C00F487CC /* Main.storyboard */; };
 		AB2FD4D91CD3140C00F487CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2FD4D81CD3140C00F487CC /* Assets.xcassets */; };
 		AB2FD4DC1CD3140C00F487CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2FD4DA1CD3140C00F487CC /* LaunchScreen.storyboard */; };
-		AB2FD4E71CD3140C00F487CC /* YHHeadScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FD4E61CD3140C00F487CC /* YHHeadScrollViewTests.swift */; };
-		AB2FD4F21CD3140C00F487CC /* YHHeadScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FD4F11CD3140C00F487CC /* YHHeadScrollViewUITests.swift */; };
 		ABA9F34E1CD33AFE0021D955 /* YHHeadScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9F34D1CD33AFE0021D955 /* YHHeadScrollView.swift */; };
 		ABADC80C1CDADDED0053F360 /* ScrollImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC80B1CDADDED0053F360 /* ScrollImageView.swift */; };
-		ABD92A5C1CD83AE300AAC6EA /* YHHeadScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9F34D1CD33AFE0021D955 /* YHHeadScrollView.swift */; };
 		ABD92A6E1CD870D200AAC6EA /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A691CD870D200AAC6EA /* 4.png */; };
 		ABD92A6F1CD870D200AAC6EA /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6A1CD870D200AAC6EA /* 3.png */; };
 		ABD92A701CD870D200AAC6EA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6B1CD870D200AAC6EA /* 1.png */; };
 		ABD92A711CD870D200AAC6EA /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6C1CD870D200AAC6EA /* 2.png */; };
 		ABD92A721CD870D200AAC6EA /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6D1CD870D200AAC6EA /* 5.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB2FD4E31CD3140C00F487CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB2FD4C61CD3140C00F487CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB2FD4CD1CD3140C00F487CC;
-			remoteInfo = YHHeadScrollView;
-		};
-		AB2FD4EE1CD3140C00F487CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB2FD4C61CD3140C00F487CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB2FD4CD1CD3140C00F487CC;
-			remoteInfo = YHHeadScrollView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1DE7839B0B992F7C8578EAFF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,12 +31,6 @@
 		AB2FD4D81CD3140C00F487CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2FD4DB1CD3140C00F487CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2FD4DD1CD3140C00F487CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB2FD4E21CD3140C00F487CC /* YHHeadScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHHeadScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB2FD4E61CD3140C00F487CC /* YHHeadScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHHeadScrollViewTests.swift; sourceTree = "<group>"; };
-		AB2FD4E81CD3140C00F487CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB2FD4ED1CD3140C00F487CC /* YHHeadScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHHeadScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB2FD4F11CD3140C00F487CC /* YHHeadScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHHeadScrollViewUITests.swift; sourceTree = "<group>"; };
-		AB2FD4F31CD3140C00F487CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA9F34D1CD33AFE0021D955 /* YHHeadScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHeadScrollView.swift; sourceTree = "<group>"; };
 		ABADC80B1CDADDED0053F360 /* ScrollImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		ABD92A691CD870D200AAC6EA /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
@@ -75,20 +49,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DF21ABEBC77A876CBDF2A3 /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2FD4DF1CD3140C00F487CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2FD4EA1CD3140C00F487CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +77,6 @@
 			children = (
 				AB2FD4D01CD3140C00F487CC /* YHHeadScrollView */,
 				ABD92A5D1CD8702E00AAC6EA /* Resource */,
-				AB2FD4E51CD3140C00F487CC /* YHHeadScrollViewTests */,
-				AB2FD4F01CD3140C00F487CC /* YHHeadScrollViewUITests */,
 				AB2FD4CF1CD3140C00F487CC /* Products */,
 				7F1812440BEE861D08873D98 /* Pods */,
 				6EAD8815E04361EF2869042A /* Frameworks */,
@@ -129,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				AB2FD4CE1CD3140C00F487CC /* YHHeadScrollView.app */,
-				AB2FD4E21CD3140C00F487CC /* YHHeadScrollViewTests.xctest */,
-				AB2FD4ED1CD3140C00F487CC /* YHHeadScrollViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,24 +105,6 @@
 				ABD92A731CD8780700AAC6EA /* YHHeadScrollView-Bridging-Header.h */,
 			);
 			path = YHHeadScrollView;
-			sourceTree = "<group>";
-		};
-		AB2FD4E51CD3140C00F487CC /* YHHeadScrollViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB2FD4E61CD3140C00F487CC /* YHHeadScrollViewTests.swift */,
-				AB2FD4E81CD3140C00F487CC /* Info.plist */,
-			);
-			path = YHHeadScrollViewTests;
-			sourceTree = "<group>";
-		};
-		AB2FD4F01CD3140C00F487CC /* YHHeadScrollViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AB2FD4F11CD3140C00F487CC /* YHHeadScrollViewUITests.swift */,
-				AB2FD4F31CD3140C00F487CC /* Info.plist */,
-			);
-			path = YHHeadScrollViewUITests;
 			sourceTree = "<group>";
 		};
 		ABD92A5D1CD8702E00AAC6EA /* Resource */ = {
@@ -212,42 +150,6 @@
 			productReference = AB2FD4CE1CD3140C00F487CC /* YHHeadScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB2FD4E11CD3140C00F487CC /* YHHeadScrollViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB2FD4F91CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewTests" */;
-			buildPhases = (
-				AB2FD4DE1CD3140C00F487CC /* Sources */,
-				AB2FD4DF1CD3140C00F487CC /* Frameworks */,
-				AB2FD4E01CD3140C00F487CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB2FD4E41CD3140C00F487CC /* PBXTargetDependency */,
-			);
-			name = YHHeadScrollViewTests;
-			productName = YHHeadScrollViewTests;
-			productReference = AB2FD4E21CD3140C00F487CC /* YHHeadScrollViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AB2FD4EC1CD3140C00F487CC /* YHHeadScrollViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB2FD4FC1CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewUITests" */;
-			buildPhases = (
-				AB2FD4E91CD3140C00F487CC /* Sources */,
-				AB2FD4EA1CD3140C00F487CC /* Frameworks */,
-				AB2FD4EB1CD3140C00F487CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB2FD4EF1CD3140C00F487CC /* PBXTargetDependency */,
-			);
-			name = YHHeadScrollViewUITests;
-			productName = YHHeadScrollViewUITests;
-			productReference = AB2FD4ED1CD3140C00F487CC /* YHHeadScrollViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,14 +163,6 @@
 					AB2FD4CD1CD3140C00F487CC = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3E4LSSERGY;
-					};
-					AB2FD4E11CD3140C00F487CC = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = AB2FD4CD1CD3140C00F487CC;
-					};
-					AB2FD4EC1CD3140C00F487CC = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = AB2FD4CD1CD3140C00F487CC;
 					};
 				};
 			};
@@ -286,8 +180,6 @@
 			projectRoot = "";
 			targets = (
 				AB2FD4CD1CD3140C00F487CC /* YHHeadScrollView */,
-				AB2FD4E11CD3140C00F487CC /* YHHeadScrollViewTests */,
-				AB2FD4EC1CD3140C00F487CC /* YHHeadScrollViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,20 +197,6 @@
 				ABD92A721CD870D200AAC6EA /* 5.png in Resources */,
 				AB2FD4D91CD3140C00F487CC /* Assets.xcassets in Resources */,
 				AB2FD4D71CD3140C00F487CC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2FD4E01CD3140C00F487CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2FD4EB1CD3140C00F487CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,37 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB2FD4DE1CD3140C00F487CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB2FD4E71CD3140C00F487CC /* YHHeadScrollViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB2FD4E91CD3140C00F487CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABD92A5C1CD83AE300AAC6EA /* YHHeadScrollView.swift in Sources */,
-				AB2FD4F21CD3140C00F487CC /* YHHeadScrollViewUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB2FD4E41CD3140C00F487CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB2FD4CD1CD3140C00F487CC /* YHHeadScrollView */;
-			targetProxy = AB2FD4E31CD3140C00F487CC /* PBXContainerItemProxy */;
-		};
-		AB2FD4EF1CD3140C00F487CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB2FD4CD1CD3140C00F487CC /* YHHeadScrollView */;
-			targetProxy = AB2FD4EE1CD3140C00F487CC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB2FD4D51CD3140C00F487CC /* Main.storyboard */ = {
@@ -553,54 +401,6 @@
 			};
 			name = Release;
 		};
-		AB2FD4FA1CD3140C00F487CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = YHHeadScrollViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.YHHeadScrollViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHHeadScrollView.app/YHHeadScrollView";
-			};
-			name = Debug;
-		};
-		AB2FD4FB1CD3140C00F487CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = YHHeadScrollViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.YHHeadScrollViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHHeadScrollView.app/YHHeadScrollView";
-			};
-			name = Release;
-		};
-		AB2FD4FD1CD3140C00F487CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = YHHeadScrollViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.YHHeadScrollViewUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YHHeadScrollView;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		AB2FD4FE1CD3140C00F487CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = YHHeadScrollViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.YHHeadScrollViewUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YHHeadScrollView;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,24 +418,6 @@
 			buildConfigurations = (
 				AB2FD4F71CD3140C00F487CC /* Debug */,
 				AB2FD4F81CD3140C00F487CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB2FD4F91CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB2FD4FA1CD3140C00F487CC /* Debug */,
-				AB2FD4FB1CD3140C00F487CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB2FD4FC1CD3140C00F487CC /* Build configuration list for PBXNativeTarget "YHHeadScrollViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB2FD4FD1CD3140C00F487CC /* Debug */,
-				AB2FD4FE1CD3140C00F487CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
