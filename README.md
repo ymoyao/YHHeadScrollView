@@ -98,7 +98,9 @@ The closure of imageView touchEvent,it retrun dataTag,so you know witch imageVie
 Developer
 -------------------
 Autor:developeryh
+
 Emil:developer_yh@163.com
+
 It's so friendly,Right? So if you has everything doubt,Please contact me,and don't forgert star if you like
 
 
