@@ -7,7 +7,7 @@ Demo
 The code to make this jpg is in the `ExampleProject/` directory:
 
 <p align="center">
-<img src="http://img0.imgtn.bdimg.com/it/u=3787903423,209157869&fm=21&gp=0.jpg">
+<img src="http://imgur.com/gallery/SZ3CYCb">
 </p>
 
 Installation
@@ -97,9 +97,9 @@ The closure of imageView touchEvent,it retrun dataTag,so you know witch imageVie
 
 Developer
 -------------------
-Autor:developeryh
+Author:developeryh
 
-Emil:developer_yh@163.com
+Email:developer_yh@163.com
 
 It's so friendly,Right? So if you has everything doubt,Please contact me,and don't forgert star if you like
 
