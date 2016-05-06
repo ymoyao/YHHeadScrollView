@@ -7,7 +7,7 @@ Demo
 The code to make this jpg is in the `ExampleProject/` directory:
 
 <p align="center">
-<img src="http://pan.baidu.com/s/1i5tXIfj">
+<img src="http://img0.imgtn.bdimg.com/it/u=3787903423,209157869&fm=21&gp=0.jpg">
 </p>
 
 Installation
