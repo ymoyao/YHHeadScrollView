@@ -244,6 +244,7 @@ class YHHeadScrollView: UIView {
     private var currentShowTag = 1
     private var imageViewArr:[ScrollImageView]?
     private var timer:NSTimer?
+    var placeImageUrlStr:String?
     var yHHeadScrollViewClosure:closure?
     var imageUrlStrArr:[NSString]? {
         
