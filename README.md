@@ -1,6 +1,15 @@
 # YHHeadScrollView
 仿mac网页云音乐的头部滚动视图
 
+Demo
+----
+
+The code to make this jpg is in the `ExampleProject/` directory:
+
+<p align="center">
+<img src="http://g.picphotos.baidu.com/album/s%3D1000%3Bq%3D90/sign=ca8f2f0f7ccb0a4681228f395b53cd55/f9dcd100baa1cd11b4f7bfd5be12c8fcc2ce2d86.jpg">
+</p>
+
 Installation
 ------------
 
@@ -20,9 +29,9 @@ Initialization
 
 ####Objective-C
 You Must Notice Follow Tips:
-- if your project is buid by objective-c ,you must new a file by named "yourobjectName-Bridging-Header.h"
-- and then copy the file Path of "yourobjectName-Bridging-Header.h" to your targert's Build Settings  -> Objective-C Bridging Header 
-- at last add "#import "yourobjectName-Swift.h"" into the file of you use, and you can init like the follow code 
+- If your project is buid by objective-c ,you must new a file by named "yourobjectName-Bridging-Header.h"
+- And then copy the file Path of "yourobjectName-Bridging-Header.h" to your targert's Build Settings  -> Objective-C Bridging Header 
+- At last add "#import "yourobjectName-Swift.h"" into the file of you use, and you can init like the follow code 
 
 ``` objc
 - (void)viewDidLoad{
@@ -39,7 +48,7 @@ You Must Notice Follow Tips:
 ```
 
 ####Swift
-On The Swift,If You Have a TableView, You Can Do This
+On The Swift,If you have a tableView, You can do like this
 ``` swift
 func loadSubViews(){
     ...
@@ -74,12 +83,15 @@ The images urlStrs array.
 - If imageUrlStrArr.count >=3,it will scroll like the demo gif
 
 ####Optonal
-####placeImageUrlStr
+####placeImageUrlStr:
 
 It will be used when the imageUrl if useless
 
+####timeScrollInterval: --defalut:2
+
+Interval of the imageViews Scroll,defalut time is 2 seconds
  
-####yHHeadScrollViewClosure(Nsinteger dataTag)
+####yHHeadScrollViewClosure(Nsinteger dataTag):
 
 The closure of imageView touchEvent,it retrun dataTag,so you know witch imageView be touched. 
 
@@ -87,7 +99,7 @@ Developer
 -------------------
 Autor:developeryh
 Emil:developer_yh@163.com
-It's so friendly,Right? So if you has everything doubt,please contact me,and don't forgert to star if you like
+It's so friendly,Right? So if you has everything doubt,Please contact me,and don't forgert star if you like
 
 
 

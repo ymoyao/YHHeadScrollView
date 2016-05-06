@@ -190,7 +190,7 @@ class YHHeadScrollView: UIView {
     //使能timer
     func enableTimer(){
         if self.timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("scrollImages"), userInfo: nil, repeats: true)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(timeScrollInterval, target: self, selector: Selector("scrollImages"), userInfo: nil, repeats: true)
             self.timer?.fireDate = NSDate.init(timeInterval: 3, sinceDate: NSDate.init())
         }
     }
@@ -245,6 +245,7 @@ class YHHeadScrollView: UIView {
     private var imageViewArr:[ScrollImageView]?
     private var timer:NSTimer?
     var placeImageUrlStr:String?
+    var timeScrollInterval:Double = 2
     var yHHeadScrollViewClosure:closure?
     var imageUrlStrArr:[NSString]? {
         
