@@ -18,7 +18,7 @@ You could instead clone the project and copy the YHHeadScrollView/YHHeadScrollVi
 Initialization
 --------------
 
-#Objective-C
+####Objective-C
 You Must Notice Follow Tips:
 - if your project is buid by objective-c ,you must new a file by named "yourobjectName-Bridging-Header.h"
 - and then copy the file Path of "yourobjectName-Bridging-Header.h" to your targert's Build Settings  -> Objective-C Bridging Header 
@@ -38,7 +38,7 @@ You Must Notice Follow Tips:
 }
 ```
 
-#Swift
+####Swift
 On The Swift,If You Have a TableView, You Can Do This
 ``` swift
 func loadSubViews(){
@@ -61,5 +61,34 @@ lazy var tableViewHeadView:YHHeadScrollView? =  {
 }()
 ```
 
-Options
+Property
 -------
+
+####Requrid
+####imageUrlStrArr:
+
+The images urlStrs array.
+- If imageUrlStrArr.count = 0,there is a default imageView that can't touch full of view.
+- If imageUrlStrArr.count = 1,there is only a imageView full of view that can touch.
+- If imageUrlStrArr.count = 2,it will scroll like the demo gif,but a same imageView  will be copyed automatic to imageUrlStrArr to reach 3 counts.
+- If imageUrlStrArr.count >=3,it will scroll like the demo gif
+
+####Optonal
+####placeImageUrlStr
+
+It will be used when the imageUrl if useless
+
+ 
+####yHHeadScrollViewClosure(Nsinteger dataTag)
+
+The closure of imageView touchEvent,it retrun dataTag,so you know witch imageView be touched. 
+
+Developer
+-------------------
+Autor:developeryh
+Emil:developer_yh@163.com
+It's so friendly,Right? So if you has everything doubt,please contact me,and don't forgert to star if you like
+
+
+
+
