@@ -7,7 +7,7 @@ Demo
 The code to make this jpg is in the `ExampleProject/` directory:
 
 <p align="center">
-<img src="http://imgur.com/gallery/SZ3CYCb">
+<img src="http://i.imgur.com/SZ3CYCb.jpg">
 </p>
 
 Installation
