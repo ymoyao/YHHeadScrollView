@@ -20,7 +20,7 @@ class YHHeadScrollView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.redColor()
+        self.backgroundColor = UIColor.whiteColor()
         
         loadSubViews()
     }
@@ -356,7 +356,7 @@ class YHHeadScrollView: UIView {
     
     lazy var scrollView:UIScrollView? = {
         let scrollView = UIScrollView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width , 0))
-        scrollView.backgroundColor = UIColor.yellowColor()
+        scrollView.backgroundColor = UIColor.whiteColor()
         scrollView.pagingEnabled = true
         scrollView.delaysContentTouches = false
         scrollView.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 150)
