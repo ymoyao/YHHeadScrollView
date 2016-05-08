@@ -7,7 +7,7 @@ Demo
 The code to make this jpg is in the `ExampleProject/` directory:
 
 <p align="center">
-<img src="http://i.imgur.com/SZ3CYCb.jpg">
+<img src="http://i.imgur.com/xrB0iQZ.gif">
 </p>
 
 Installation
@@ -39,6 +39,8 @@ You Must Notice Follow Tips:
     ...
     YHHeadScrollView *topImgView = [[YHHeadScrollView alloc]init];
     topImgView.imageUrlStrArr = @[@"http://pic33.nipic.com/20130928/4420504_005335593000_2.jpg",@"http://pic.58pic.com/58pic/13/43/94/88258PICeV4_1024.jpg",@"http://pic26.nipic.com/20130127/9391931_094607395166_2.jpg"];
+    topImgView.placeImageStr = @"placeImageStr"
+    topImgView.timeScrollInterval = 3
     topImgView.yHHeadScrollViewClosure = ^(NSInteger dataTag){
         //call on the Correspondence's View be touch
     };
@@ -60,6 +62,8 @@ func loadSubViews(){
 lazy var tableViewHeadView:YHHeadScrollView? =  {
     let tableViewHeadView = YHHeadScrollView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 150))
     tableViewHeadView.imageUrlStrArr = ["http://pic33.nipic.com/20130928/4420504_005335593000_2.jpg","http://pic.58pic.com/58pic/13/43/94/88258PICeV4_1024.jpg","http://pic26.nipic.com/20130127/9391931_094607395166_2.jpg","http://pic61.nipic.com/file/20150311/20613793_172336144198_2.png","http://pic.58pic.com/10/20/29/99bOOOPIC77.jpg","http://pic15.nipic.com/20110630/6322714_105943746342_2.jpg","http://pic26.nipic.com/20130127/9391931_094607395166_2.jpg"]
+    tableViewHeadView.placeImageStr = "placeImageStr"
+    tableViewHeadView.timeScrollInterval = 3
     tableViewHeadView.yHHeadScrollViewClosure = {(dataTag) in
         //call on the Correspondence's View be touch
         ...

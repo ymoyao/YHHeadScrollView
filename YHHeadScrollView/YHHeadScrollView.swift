@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-//import Kingfisher
+import Kingfisher
 
 typealias closure = (Int) -> Void
 
@@ -244,7 +244,7 @@ class YHHeadScrollView: UIView {
     private var currentShowTag = 1
     private var imageViewArr:[ScrollImageView]?
     private var timer:NSTimer?
-    var placeImageUrlStr:String?
+    var placeImageStr:String?
     var timeScrollInterval:Double = 2
     var yHHeadScrollViewClosure:closure?
     var imageUrlStrArr:[NSString]? {
@@ -270,7 +270,7 @@ class YHHeadScrollView: UIView {
                     }
                 }
                 imageView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, self.frame.size.height)
-                imageView.image = UIImage.init(named: "1")
+                imageView.image = UIImage.init(named: placeImageStr!)
                 self.scrollView?.addSubview(imageView)
                 self.imageViewArr?.append(imageView)
             }
@@ -294,6 +294,9 @@ class YHHeadScrollView: UIView {
                 imageView.userInteractionEnabled = true
                 imageView.tag = 100
                 imageView.dataTag = 100
+                
+                imageView.kf_setImageWithURL(NSURL.init(string: imageUrlStrArr![0] as String)!, placeholderImage: UIImage.init(named: placeImageStr!))
+                
 //                imageView.sd_setImageWithURL(NSURL.init(string: imageUrlStrArr![0] as String), placeholderImage: UIImage.init(named: "1"))
                 imageView.addGestureRecognizer(noAnimationTapGes())
                 self.scrollView?.addSubview(imageView)
@@ -337,6 +340,7 @@ class YHHeadScrollView: UIView {
                     }
                     
                     imageView.tag = 100 + i
+                    imageView.kf_setImageWithURL(NSURL.init(string: imageUrlStrArr![i] as String)!, placeholderImage: UIImage.init(named: placeImageStr!))
 //                    imageView.sd_setImageWithURL(NSURL.init(string: imageUrlStrArr![i] as String), placeholderImage: UIImage.init(named: "1"))
                     imageView.addGestureRecognizer(tapGes())
                     imageView.addGestureRecognizer(swipLeftGes())

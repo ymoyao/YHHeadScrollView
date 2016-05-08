@@ -15,7 +15,7 @@
 		AB2FD4DC1CD3140C00F487CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2FD4DA1CD3140C00F487CC /* LaunchScreen.storyboard */; };
 		ABADC8171CDB19DA0053F360 /* ScrollImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC8151CDB19DA0053F360 /* ScrollImageView.swift */; };
 		ABADC8181CDB19DA0053F360 /* YHHeadScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC8161CDB19DA0053F360 /* YHHeadScrollView.swift */; };
-		ABD92A701CD870D200AAC6EA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6B1CD870D200AAC6EA /* 1.png */; };
+		ABD92A701CD870D200AAC6EA /* placeImageStr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A6B1CD870D200AAC6EA /* placeImageStr@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		AB2FD4DD1CD3140C00F487CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABADC8151CDB19DA0053F360 /* ScrollImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		ABADC8161CDB19DA0053F360 /* YHHeadScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHeadScrollView.swift; sourceTree = "<group>"; };
-		ABD92A6B1CD870D200AAC6EA /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		ABD92A6B1CD870D200AAC6EA /* placeImageStr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeImageStr@2x.png"; sourceTree = "<group>"; };
 		BB1BDC2C44FD8B1F67DF442A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A86D2CC77384778AF34623 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +116,7 @@
 		ABD92A5E1CD8704500AAC6EA /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				ABD92A6B1CD870D200AAC6EA /* 1.png */,
+				ABD92A6B1CD870D200AAC6EA /* placeImageStr@2x.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2FD4DC1CD3140C00F487CC /* LaunchScreen.storyboard in Resources */,
-				ABD92A701CD870D200AAC6EA /* 1.png in Resources */,
+				ABD92A701CD870D200AAC6EA /* placeImageStr@2x.png in Resources */,
 				AB2FD4D91CD3140C00F487CC /* Assets.xcassets in Resources */,
 				AB2FD4D71CD3140C00F487CC /* Main.storyboard in Resources */,
 			);
