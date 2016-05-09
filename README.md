@@ -21,13 +21,16 @@ The simplest way to use YHHeadScrollView in your application is with [CocoaPods]
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
-pod "YHHeadScrollView", "~> 1.0.1"
+pod "YHHeadScrollView", "~> 1.0.2"
 ```
 
 You could instead clone the project and copy the YHHeadScrollView/YHHeadScrollView.{h,swift} files into your project.
 
 Initialization
 --------------
+Both OC&Swift Tips:
+
+If YHHeadScrollView's superView is scrollView/tableView/collectionView.You must let YHHeadScrollView's superView.delaysContentTouches = false/NO.
 
 ####Objective-C
 You Must Notice Follow Tips:

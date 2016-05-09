@@ -10,22 +10,22 @@ import UIKit
 import Foundation
 import Kingfisher
 
-typealias closure = (Int) -> Void
+public typealias closure = (Int) -> Void
 
-class YHHeadScrollView: UIView {
+public class YHHeadScrollView: UIView {
     
     deinit{
         cancelTimer()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.whiteColor()
         
         loadSubViews()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -90,32 +90,6 @@ class YHHeadScrollView: UIView {
                 
                 self.imageViewArr![i].tag = 100 + i
             }
-//            for var i = 0; i < self.imageViewArr?.count ; i += 1 {
-//                if i >= 3{
-//                    self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
-//                    self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                }
-//                else{
-//                    if currentTapTag  < self.currentShowTag{
-//                        
-//                        if i == 0{
-//                            self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                        }
-//                        else{
-//                            self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
-//                        }
-//                        
-//                    }
-//                    else{
-//                        self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                    }
-//                    
-//                    self.imageViewArr![i].frame = self.frameArray![i]
-//                }
-//                
-//                
-//                self.imageViewArr![i].tag = 100 + i
-//            }
             
             }, completion: nil)
         
@@ -138,16 +112,6 @@ class YHHeadScrollView: UIView {
                     self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
                     self.imageViewArr![i].tag = 100 + i
                 }
-//                for var i = 0; i < self.imageViewArr?.count ; i += 1 {
-//                    if i >= 3{
-//                        self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
-//                    }
-//                    else{
-//                        self.imageViewArr![i].frame = self.frameArray![i]
-//                    }
-//                    self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                    self.imageViewArr![i].tag = 100 + i
-//                }
                 }, completion: nil)
             
         }
@@ -172,22 +136,6 @@ class YHHeadScrollView: UIView {
                     }
 
                 }
-//                    for var i = 0; i < self.imageViewArr?.count ; i += 1 {
-//                        if i >= 3{
-//                            self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
-//                            self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                        }
-//                        else{
-//                            if i == 0{
-//                                self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                            }
-//                            else{
-//                                self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
-//                            }
-//                            self.imageViewArr![i].frame = self.frameArray![i]
-//                            self.imageViewArr![i].tag = 100 + i
-//                        }
-//                    }
                 }, completion: nil)
         }
         
@@ -208,17 +156,7 @@ class YHHeadScrollView: UIView {
                 self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
                 self.imageViewArr![i].tag = 100 + i
             }
-            
-//            for var i = 0; i < self.imageViewArr?.count ; i += 1 {
-//                if i >= 3{
-//                    self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
-//                }
-//                else{
-//                    self.imageViewArr![i].frame = self.frameArray![i]
-//                }
-//                self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-//                self.imageViewArr![i].tag = 100 + i
-//            }
+        
             }, completion: nil)
     }
     
@@ -252,7 +190,7 @@ class YHHeadScrollView: UIView {
     }
     
     //使能timer
-    func enableTimer(){
+    public func enableTimer(){
         if self.timer == nil {
             self.timer = NSTimer.scheduledTimerWithTimeInterval(timeScrollInterval, target: self, selector: #selector(YHHeadScrollView.scrollImages), userInfo: nil, repeats: true)
             self.timer?.fireDate = NSDate.init(timeInterval: 3, sinceDate: NSDate.init())
@@ -260,7 +198,7 @@ class YHHeadScrollView: UIView {
     }
     
     //注销timer
-    func cancelTimer(){
+    public func cancelTimer(){
         if self.timer != nil {
             self.timer?.invalidate()
             self.timer = nil
@@ -308,10 +246,10 @@ class YHHeadScrollView: UIView {
     private var currentShowTag = 1
     private var imageViewArr:[ScrollImageView]?
     private var timer:NSTimer?
-    var placeImageStr:String?
-    var timeScrollInterval:Double = 2
-    var yHHeadScrollViewClosure:closure?
-    var imageUrlStrArr:[NSString]? {
+    public var placeImageStr:String?
+    public var timeScrollInterval:Double = 2
+    public var yHHeadScrollViewClosure:closure?
+    public var imageUrlStrArr:[NSString]? {
         
         didSet{
             self.imageViewArr = [ScrollImageView]()
@@ -445,7 +383,7 @@ class YHHeadScrollView: UIView {
     
     
     //布局
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         var frame = scrollView?.frame
         frame?.size.height = self.frame.size.height
