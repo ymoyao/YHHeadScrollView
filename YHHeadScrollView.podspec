@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YHHeadScrollView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "ScollImageView with animation and once show three"
 
   # This description is used to generate tags and improve search results.
@@ -135,7 +135,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/**" }
+  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/**" }
   s.dependency "Kingfisher", "~> 2.4"
 
 
@@ -145,10 +145,10 @@ Pod::Spec.new do |s|
  #git push origin master
  #git push origin --delete '1.0.0' 
  #git tag -d '1.0.0' 
- #git tag '1.0.0'  
+ #git tag '1.0.1' 
  #git push --tags   
  #pod lib lint --verbose --no-clean --allow-warnings
- #pod trunk push YHHeadScrollView.podspec --verbose
+ #pod trunk push YHHeadScrollView.podspec --verbose --allow-warnings
 
 
 end
