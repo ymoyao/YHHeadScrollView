@@ -79,7 +79,7 @@ lazy var tableViewHeadView:YHHeadScrollView? =  {
 Property
 -------
 
-####Requrid
+###Requrid
 ####imageUrlStrArr:
 
 The images urlStrs array.
@@ -88,11 +88,12 @@ The images urlStrs array.
 - If imageUrlStrArr.count = 2,it will scroll like the demo gif,but a same imageView  will be copyed automatic to imageUrlStrArr to reach 3 counts.
 - If imageUrlStrArr.count >=3,it will scroll like the demo gif
 
-####Optonal
-####placeImageUrlStr:
+
+####placeImageStr:
 
 It will be used when the imageUrl if useless
 
+###Optonal
 ####timeScrollInterval: --defalut:2
 
 Interval of the imageViews Scroll,defalut time is 2 seconds
