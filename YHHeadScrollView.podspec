@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YHHeadScrollView"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "ScollImageView with animation and once show three"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-			you can use it to make a cool headScroll
+		    ScollImageView with animation and once show three,
+		    you can use it to make a cool headScroll
                    DESC
 
   s.homepage     = "https://github.com/developeryh/YHHeadScrollView"
@@ -142,9 +143,9 @@ Pod::Spec.new do |s|
  #git add .  
  #git commit -m"6" 
  #git push origin master
- #git push origin --delete '0.0.1' 
- #git tag -d '0.0.1'  
- #git tag '0.0.1'   
+ #git push origin --delete '1.0.0'
+ #git tag -d '1.0.0' 
+ #git tag '1.0.0'  
  #git push --tags   
  #pod lib lint --verbose --no-clean --allow-warnings
  #pod trunk push YHHeadScrollView.podspec --verbose
