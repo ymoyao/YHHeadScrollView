@@ -144,6 +144,7 @@ Pod::Spec.new do |s|
  #git tag '0.0.1'   
  #git push --tags   
  #pod lib lint --verbose
+ #pod trunk push YHHeadScrollView.podspec
 
 
 end
