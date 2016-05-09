@@ -64,7 +64,7 @@ class YHHeadScrollView: UIView {
             
             self.imageViewArr! = self.rotate(currentTapTag, array: self.imageViewArr!) as! [ScrollImageView]
             
-            for var i = 0; i < self.imageViewArr?.count ; i++ {
+            for i in 0..<self.imageViewArr!.count {
                 if i >= 3{
                     self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
                     self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
@@ -90,6 +90,32 @@ class YHHeadScrollView: UIView {
                 
                 self.imageViewArr![i].tag = 100 + i
             }
+//            for var i = 0; i < self.imageViewArr?.count ; i += 1 {
+//                if i >= 3{
+//                    self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+//                    self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                }
+//                else{
+//                    if currentTapTag  < self.currentShowTag{
+//                        
+//                        if i == 0{
+//                            self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                        }
+//                        else{
+//                            self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
+//                        }
+//                        
+//                    }
+//                    else{
+//                        self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                    }
+//                    
+//                    self.imageViewArr![i].frame = self.frameArray![i]
+//                }
+//                
+//                
+//                self.imageViewArr![i].tag = 100 + i
+//            }
             
             }, completion: nil)
         
@@ -102,7 +128,7 @@ class YHHeadScrollView: UIView {
             UIView.animateKeyframesWithDuration(0.5, delay: 0, options: UIViewKeyframeAnimationOptions.AllowUserInteraction, animations: { () -> Void in
                 self.imageViewArr! = self.rotate(2, array: self.imageViewArr!) as! [ScrollImageView]
                 
-                for var i = 0; i < self.imageViewArr?.count ; i++ {
+                for i in 0..<self.imageViewArr!.count{
                     if i >= 3{
                         self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
                     }
@@ -112,29 +138,56 @@ class YHHeadScrollView: UIView {
                     self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
                     self.imageViewArr![i].tag = 100 + i
                 }
+//                for var i = 0; i < self.imageViewArr?.count ; i += 1 {
+//                    if i >= 3{
+//                        self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+//                    }
+//                    else{
+//                        self.imageViewArr![i].frame = self.frameArray![i]
+//                    }
+//                    self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                    self.imageViewArr![i].tag = 100 + i
+//                }
                 }, completion: nil)
             
         }
         else if swip.direction == UISwipeGestureRecognizerDirection.Right {
             UIView.animateKeyframesWithDuration(0.5, delay: 0, options: UIViewKeyframeAnimationOptions.AllowUserInteraction, animations: { () -> Void in
                     self.imageViewArr! = self.rotate(0, array: self.imageViewArr!) as! [ScrollImageView]
-                    
-                    for var i = 0; i < self.imageViewArr?.count ; i++ {
-                        if i >= 3{
-                            self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+                
+                for i in 0..<self.imageViewArr!.count{
+                    if i >= 3{
+                        self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+                        self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+                    }
+                    else{
+                        if i == 0{
                             self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
                         }
                         else{
-                            if i == 0{
-                                self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
-                            }
-                            else{
-                                self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
-                            }
-                            self.imageViewArr![i].frame = self.frameArray![i]
-                            self.imageViewArr![i].tag = 100 + i
+                            self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
                         }
+                        self.imageViewArr![i].frame = self.frameArray![i]
+                        self.imageViewArr![i].tag = 100 + i
                     }
+
+                }
+//                    for var i = 0; i < self.imageViewArr?.count ; i += 1 {
+//                        if i >= 3{
+//                            self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+//                            self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                        }
+//                        else{
+//                            if i == 0{
+//                                self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                            }
+//                            else{
+//                                self.scrollView!.bringSubviewToFront(self.imageViewArr![i])
+//                            }
+//                            self.imageViewArr![i].frame = self.frameArray![i]
+//                            self.imageViewArr![i].tag = 100 + i
+//                        }
+//                    }
                 }, completion: nil)
         }
         
@@ -145,7 +198,7 @@ class YHHeadScrollView: UIView {
         UIView.animateKeyframesWithDuration(0.5, delay: 0, options: UIViewKeyframeAnimationOptions.AllowUserInteraction, animations: { () -> Void in
             self.imageViewArr! = self.rotate(2, array: self.imageViewArr!) as! [ScrollImageView]
             
-            for var i = 0; i < self.imageViewArr?.count ; i++ {
+            for i in 0..<self.imageViewArr!.count{
                 if i >= 3{
                     self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
                 }
@@ -155,6 +208,17 @@ class YHHeadScrollView: UIView {
                 self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
                 self.imageViewArr![i].tag = 100 + i
             }
+            
+//            for var i = 0; i < self.imageViewArr?.count ; i += 1 {
+//                if i >= 3{
+//                    self.imageViewArr![i].frame = CGRectMake(0, self.frame.size.height / 2, 0, 0)
+//                }
+//                else{
+//                    self.imageViewArr![i].frame = self.frameArray![i]
+//                }
+//                self.scrollView!.sendSubviewToBack(self.imageViewArr![i])
+//                self.imageViewArr![i].tag = 100 + i
+//            }
             }, completion: nil)
     }
     
@@ -162,27 +226,27 @@ class YHHeadScrollView: UIView {
     //MARK: - =Private=
     //无动效点击生成
     func noAnimationTapGes() -> UITapGestureRecognizer{
-        let tap = UITapGestureRecognizer.init(target: self, action: Selector("noAnimationTapGes:"))
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(YHHeadScrollView.noAnimationTapGes(_:)))
         return tap
     }
 
     
     //单击生成
     func tapGes() -> UITapGestureRecognizer{
-        let tap = UITapGestureRecognizer.init(target: self, action: Selector("tapGes:"))
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(YHHeadScrollView.tapGes(_:)))
         return tap
     }
     
     //左滑生成
     func swipLeftGes() ->UISwipeGestureRecognizer{
-        let swip = UISwipeGestureRecognizer.init(target: self, action: Selector("swipGes:"))
+        let swip = UISwipeGestureRecognizer.init(target: self, action: #selector(YHHeadScrollView.swipGes(_:)))
         swip.direction = UISwipeGestureRecognizerDirection.Left
         return swip
     }
     
     //右滑生成
     func swipRightGes() ->UISwipeGestureRecognizer{
-        let swip = UISwipeGestureRecognizer.init(target: self, action: Selector("swipGes:"))
+        let swip = UISwipeGestureRecognizer.init(target: self, action: #selector(YHHeadScrollView.swipGes(_:)))
         swip.direction = UISwipeGestureRecognizerDirection.Right
         return swip
     }
@@ -190,7 +254,7 @@ class YHHeadScrollView: UIView {
     //使能timer
     func enableTimer(){
         if self.timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(timeScrollInterval, target: self, selector: Selector("scrollImages"), userInfo: nil, repeats: true)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(timeScrollInterval, target: self, selector: #selector(YHHeadScrollView.scrollImages), userInfo: nil, repeats: true)
             self.timer?.fireDate = NSDate.init(timeInterval: 3, sinceDate: NSDate.init())
         }
     }
@@ -213,7 +277,7 @@ class YHHeadScrollView: UIView {
         }
         else if index > arrarHalfCount {
             let obj = array.first
-            for var j = 0; j < array.count; j++ {
+            for j in 0 ..< array.count {
                 if j != array.count - 1
                 {
                     array[j] = array[j + 1]
@@ -225,7 +289,7 @@ class YHHeadScrollView: UIView {
         }
         else{
             let obj = array.last
-            for var j = array.count - 1; j >= 0; j-- {
+            for var j = array.count - 1; j >= 0; j -= 1 {
                 if j != 0
                 {
                     array[j] = array[j - 1]
@@ -308,7 +372,7 @@ class YHHeadScrollView: UIView {
                     imageUrlStrArr?.append((imageUrlStrArr?.first)!)
                     style = 1
                 }
-                for var i = 0; i < imageUrlStrArr?.count; i++ {
+                for var i = 0; i < imageUrlStrArr?.count; i += 1 {
                     let imageView =  ScrollImageView.init()
                     imageView.scrollImageViewClosure = { (state) in
                         switch (state){
