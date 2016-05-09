@@ -21,7 +21,7 @@ The simplest way to use YHHeadScrollView in your application is with [CocoaPods]
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
-pod "YHHeadScrollView", "~> 1.0.0"
+pod "YHHeadScrollView", "~> 1.0.1"
 ```
 
 You could instead clone the project and copy the YHHeadScrollView/YHHeadScrollView.{h,swift} files into your project.
@@ -91,7 +91,7 @@ The images urlStrs array.
 
 ####placeImageStr:
 
-It will be used when the imageUrl if useless
+You must give a imageName of your bundle, It will be used when the imageUrl if useless
 
 ###Optonal
 ####timeScrollInterval: --defalut:2
