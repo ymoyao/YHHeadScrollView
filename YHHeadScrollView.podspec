@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   #
 
   #s.resource  = "1.png"
-  s.resources = "Resource/Image/*.png"
+  #s.resources = "Resource/Image/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -143,8 +143,8 @@ Pod::Spec.new do |s|
  #git add .  
  #git commit -m"6" 
  #git push origin master
- #git push origin --delete '0.0.1'
- #git tag -d '0.0.1' 
+ #git push origin --delete '1.0.0' 
+ #git tag -d '1.0.0' 
  #git tag '1.0.0'  
  #git push --tags   
  #pod lib lint --verbose --no-clean --allow-warnings
