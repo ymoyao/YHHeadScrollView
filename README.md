@@ -18,7 +18,9 @@ The simplest way to use YHHeadScrollView in your application is with [CocoaPods]
 #### Podfile
 
 ```ruby
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
+use_frameworks!
 pod "YHHeadScrollView", "~> 0.0.1"
 ```
 
