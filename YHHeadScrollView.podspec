@@ -138,10 +138,12 @@ Pod::Spec.new do |s|
   s.dependency "Kingfisher", "~> 2.4"
 
 
- #git push origin --delete '0.0.1' 
- #git tag -d '0.0.1'     
+    
  #git add .  
- #git commit -m"6"  
+ #git commit -m"6" 
+ #git push origin master
+ #git push origin --delete '0.0.1' 
+ #git tag -d '0.0.1'  
  #git tag '0.0.1'   
  #git push --tags   
  #pod lib lint --verbose --no-clean --allow-warnings
