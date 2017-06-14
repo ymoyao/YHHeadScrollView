@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/**" }
-  s.dependency "Kingfisher", "~> 2.4"
+  s.dependency "Kingfisher"
 
 
     
@@ -145,7 +145,7 @@ Pod::Spec.new do |s|
  #git push origin master
  #git push origin --delete '1.0.0' 
  #git tag -d '1.0.0' 
- #git tag '1.0.1' 
+ #git tag ‘1.0.3’ 
  #git push --tags   
  #pod lib lint --verbose --no-clean --allow-warnings
  #pod trunk push YHHeadScrollView.podspec --verbose --allow-warnings
