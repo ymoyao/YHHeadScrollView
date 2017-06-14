@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YHHeadScrollView"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "ScollImageView with animation and once show three"
 
   # This description is used to generate tags and improve search results.
