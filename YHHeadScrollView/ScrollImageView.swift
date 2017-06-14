@@ -16,31 +16,31 @@ class ScrollImageView: UIImageView {
     var dataTag:Int?
     var scrollImageViewClosure:closure?
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("began")
         if scrollImageViewClosure != nil {
-            scrollImageViewClosure!(UIGestureRecognizerState.Began)
+            scrollImageViewClosure!(UIGestureRecognizerState.began)
         }
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("Cancelled")
         if scrollImageViewClosure != nil {
-            scrollImageViewClosure!(UIGestureRecognizerState.Cancelled)
+            scrollImageViewClosure!(UIGestureRecognizerState.cancelled)
         }
     }
 
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("Ended")
         if scrollImageViewClosure != nil {
-            scrollImageViewClosure!(UIGestureRecognizerState.Ended)
+            scrollImageViewClosure!(UIGestureRecognizerState.ended)
         }
     }
     
-    override func touchesEstimatedPropertiesUpdated(touches: Set<NSObject>) {
+    override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
         print("Failed")
         if scrollImageViewClosure != nil {
-            scrollImageViewClosure!(UIGestureRecognizerState.Failed)
+            scrollImageViewClosure!(UIGestureRecognizerState.failed)
         }
     }
 

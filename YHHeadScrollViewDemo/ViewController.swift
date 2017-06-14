@@ -24,16 +24,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     //MARK: - =Delegate=
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray!.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.textLabel?.text = dataArray![indexPath.row] as? String
         return cell!
     }
@@ -42,18 +42,18 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     //MARK: - =Setter/Getter/lazy=
     //tableView
     lazy var tableView:UITableView? = {
-        let tableView =  UITableView.init(frame: self.view.frame, style: UITableViewStyle.Plain)
+        let tableView =  UITableView.init(frame: self.view.frame, style: UITableViewStyle.plain)
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.showsVerticalScrollIndicator = false
         tableView.delaysContentTouches = false
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
     
     //tableView头部视图
     lazy var tableViewHeadView:YHHeadScrollView? =  {
-        let tableViewHeadView = YHHeadScrollView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 150))
+        let tableViewHeadView = YHHeadScrollView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150))
         tableViewHeadView.placeImageStr = "placeImageStr"
         tableViewHeadView.timeScrollInterval = 3
         //3,4
@@ -67,8 +67,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     //tableView数据(懒加载)
     lazy var dataArray:[AnyObject]? = {
         var array = [AnyObject]()
-        for var i = 0 ;i < 10; i++ {
-            array.append(String.init(format: "%i", i))
+        for i in 0  ..< 10 {
+            array.append(String.init(format: "%i", i) as AnyObject)
         }
         return array;
     }()
