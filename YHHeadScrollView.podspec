@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YHHeadScrollView"
-  s.version      = "1.0.7"
+  s.version      = "1.1.0"
   s.summary      = "ScollImageView with animation and once show three"
 
   # This description is used to generate tags and improve search results.
@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/**" }
-  s.dependency "Kingfisher" , "~> 3.10.1"
+  # s.dependency "Kingfisher" , "~> 3.10.1"
 
 
     

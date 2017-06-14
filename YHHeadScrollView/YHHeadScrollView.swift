@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import Kingfisher
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
 // Consider refactoring the code to use the non-optional operators.
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
@@ -241,22 +240,13 @@ open class YHHeadScrollView: UIView {
         }
         else{
             let obj = array.last
-            for j in (0...array.count).reversed() {
+            for j in (0...array.count - 1).reversed() {
                 if j != 0 {
                     array[j] = array[j - 1]
                 }else{
                     array[j] = obj!
                 }
             }
-//            for var j = array.count - 1; j >= 0; j -= 1 {
-//                if j != 0
-//                {
-//                    array[j] = array[j - 1]
-//                }
-//                else{
-//                    array[j] = obj!
-//                }
-//            }
         }
         return array
     }
@@ -319,7 +309,14 @@ open class YHHeadScrollView: UIView {
                 imageView.isUserInteractionEnabled = true
                 imageView.tag = 100
                 imageView.dataTag = 100
-                imageView.kf.setImage(with: URL.init(string: imageUrlStrArr![0] as String)!)
+                
+                do{
+                    let url = URL.init(string: imageUrlStrArr![0] as String)
+                    let data = try Data.init(contentsOf: url!)
+                    imageView.image = UIImage.init(data:data)
+                }catch{
+                
+                }
                 imageView.addGestureRecognizer(noAnimationTapGes())
                 self.scrollView?.addSubview(imageView)
                 self.imageViewArr?.append(imageView)
@@ -361,9 +358,16 @@ open class YHHeadScrollView: UIView {
                     else{
                         imageView.dataTag = 100 + i
                     }
+
+                    do{
+                        let url = URL.init(string: imageUrlStrArr![i] as String)
+                        let data = try Data.init(contentsOf: url!)
+                        imageView.image = UIImage.init(data:data)
+                    }catch{
+                        
+                    }
                     
                     imageView.tag = 100 + i
-                    imageView.kf.setImage(with: URL.init(string: imageUrlStrArr![i] as String)!)
                     imageView.addGestureRecognizer(tapGes())
                     imageView.addGestureRecognizer(swipLeftGes())
                     imageView.addGestureRecognizer(swipRightGes())

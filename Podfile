@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'YHHeadScrollViewDemo' do
 #swift 版 sdwebImage
-pod 'Kingfisher'
+#pod 'Kingfisher'
 
 end
